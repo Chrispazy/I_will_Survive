@@ -63,6 +63,7 @@ sources:
         identifier: effectifs_pathologies_fr
         description: Effectifs_ as_pathologies_effectif_de_patients_par_pathologie_sexe_classes_age_territoire 
         columns:
+          - name: annee
           - name: patho_niv1
             description: cartographie / détail de niveau 1 pathologies des patients -
               1. maladies cardioneurovasculaires
@@ -89,18 +90,18 @@ sources:
             description: répartition en 20 classes d’âge (séparation tous les 5 ans)
           - name: dept
             description: numéro de département
-          - name: Ntop
+          - name: ntop
             description: effectif de patients pris en charge pour la pathologie (ou traitement chronique ou épisode de soins) dont il est question
-          - name: Npop
+          - name: npop
             description: population de référence qui est celle de la cartographie des pathologies et des dépenses de l’Assurance Maladie
           - name: prev
             description: prévalence de patients pris en charge pour la pathologie (ou traitement chronique ou épisode de soins) dont il est question
-          - name: Niveau prioritaire
+          - name: niveau_prioritaire
             description: niveau de priorité (1, 2 et 3)
-          - name: libelle_classe_age
-            description: répartition en 20 classes d’âge (séparation tous les 5 ans)
           - name: libelle_sexe
             description: distinction en hommes, femmes et tous sexes
+          - name: tri
+            
 
        # tests:
         #  - unique:
