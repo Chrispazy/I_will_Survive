@@ -9,9 +9,47 @@ sources:
       - name: comorbidites_fr
         identifier: comorbidites_associees_fr
         description: Comorbidités associées à chaque pathologie
-        #columns:
-         # - name: date_date
-          #  description: date of purchase
+        columns:
+          - name: année 
+            description: période étudiée  2015 - 2022
+          - name: patho_niv1 
+            description: cartographie / détail de niveau 1 PATHOLOGIES des patients (et pas comorbidites)
+              1. Maladies cardioneurovasculaires 
+              2. Traitements du risque vasculaire (hors pathologies) 
+              3. Affections de longue durée (dont 31 et 32) pour d'autres causes
+              4. Traitements psychotropes (hors pathologies)
+              5. Cancers
+              6. Diabète
+              7. Hospitalisation pour Covid-19 
+              8. pathologies psychiatriques 
+              9. maladies neurologiques
+              10. maladies respiratoires chroniques (hors mucoviscidose) 
+              11. maladies inflammatoires ou rares ou infection VIH
+              12. Insuffisance rénale chronique terminale
+              13. maladies du foie ou du pancréas (hors mucoviscidose)  
+              14. maternité (avec ou sans pathologies) 
+              15. traitement antalgique ou anti-inflammatoire (hors pathologies, traitements, maternité ou hospitalisations) 
+              16. hospitalisations hors pathologies repérées (avec ou sans pathologies, traitements ou maternité)
+          - name: patho_niv2 
+            description: cartographie / détail de niveau 2 des COMORBIDITES des patients
+              1. Accident vasculaire cérébral
+              2. Artériopathie périphérique
+              3. Autres affections cardiovasculaires
+              4. Embolie pulmonaire
+              5. Insuffisance cardiaque
+              6. Maladie coronaire
+              7. Maladie valvulaire
+              8. Troubles du rythme ou de la conduct° cardiaque
+          - name: patho_niv3 
+            description: Cartographie / détail de niveau 3 des comorbidites des patients
+          - name: ncomorb 
+            description: Effectifs des patients pris en charge pour la comorbidité associée
+          - name: ntop 
+            description: Effectif des patients pris en charge pour la pathologie ou traitement chronique ou épisode de soins) dont il est questions
+          - name: proportion_comorb 
+            description: Effectif patients pris en charge pour la comorbidité identifiée rapportée à l'effectif de patients pris en charge pour la patho dont il est question (Ncomorb/Ntop)
+          - name: region 
+          - name: dept 
         #tests:
          # - unique:
           #    column_name: "(orders_id || '_' || pdt_id)"
