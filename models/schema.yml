@@ -102,10 +102,13 @@ sources:
             description: distinction en hommes, femmes et tous sexes
           - name: tri
             
-
        # tests:
         #  - unique:
          #     column_name: "(date_date || '_' || campaign_key)"
+      - name: tabac_europe
+        identifier: tabac_europe
+        description: Statistiques sur les fumeurs et non fumeurs en europe
+
 
 # Génération des différents models intermédiaires en cas de besoins de jointures
 #models:
