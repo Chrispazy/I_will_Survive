@@ -1,3 +1,21 @@
 # mart_schema.yml
 
 version: 2
+
+# Génération des différents models intermédiaires en cas de besoins de jointures
+#models:
+ # - name: int_orders_margin
+  #  description: table intermediaire des orders margins, fait à partir de la table sales
+   # columns:
+    #  - name: orders_id
+     #   tests:
+      #    - unique
+       #   - not_null
+          
+  #- name: int_orders_operational
+   # description: table intermediaire faite à partir des stg_raw_ship
+    #columns:
+     # - name: orders_id
+      #  tests:
+       #  - unique
+        # - not_null
