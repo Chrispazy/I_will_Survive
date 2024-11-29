@@ -147,6 +147,23 @@ sources:
         identifier: tabac_europe
         description: Statistiques sur les fumeurs et non fumeurs en europe
 
+      - name: comorbidite_overview_diabete
+        identifier: COMORBIDITE_OVERVIEW_IMPORTANT
+        description: Evolution du diabete en france
+
+      - name: comorbidites_en_pourcentage
+        identifier: Comorbidites
+        description: Présentation de la représentation des comorbidités en France
+
+      - name: comorbidites_evol_toutes
+        identifier: Comorbidites_evol_Toutes
+        description: Présentation de la représentation des pathologies niv_1 en France
+
+      - name: overview_effectif_pathologie__prevalence_france
+        identifier: OVERVIEW_effectif_pathologie_France
+        description: Présentation de la représentation des prévalence fonction des pathologies niv_1 en France
+
+
 
 # Génération des différents models intermédiaires en cas de besoins de jointures
 #models:
