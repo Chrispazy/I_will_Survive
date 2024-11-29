@@ -16,7 +16,8 @@ SELECT
         ((AVG(CASE WHEN libelle_sexe = 'hommes' THEN prev END) - AVG(CASE WHEN libelle_sexe = 'femmes' THEN prev END)) /
         AVG(CASE WHEN libelle_sexe = 'femmes' THEN prev END)) * 100,
         2
-    ) AS percentage_difference
+    ) AS percentage_difference,
+    AVG(ROUND(AVG(CASE WHEN libelle_sexe = 'hommes' THEN prev END), 2),ROUND(AVG(CASE WHEN libelle_sexe = 'femmes' THEN prev END), 2)) AS avg_prev,
 FROM first_table
 GROUP BY cla_age_5
 ORDER BY cla_age_5 ASC
