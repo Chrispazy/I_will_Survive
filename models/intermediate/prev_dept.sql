@@ -105,5 +105,10 @@ SELECT
         WHEN dept = '2B' THEN 'Corse du Nord'
     END AS nom_departement,
 FROM {{ ref('effectif_pathologies_clean') }}
+WHERE dept != '971'
+    AND dept != '972'
+    AND dept != '973'
+    AND dept != '974'
+    AND dept != '976'
 GROUP BY dept
 ORDER BY dept ASC
