@@ -1,7 +1,7 @@
 SELECT 
     patho_niv1, 
     npop, 
-    libelle_sexe,
+    libelle_sexe as sexe,
     prev,
     CAST(CONCAT(annee, '-01-01') AS DATE) AS date,
     CASE 
